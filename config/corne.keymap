@@ -9,7 +9,7 @@
             #binding-cells = <0>;
             bindings = <&lt 1 RETURN>, <&kp RETURN>;
 
-            tapping-term-ms = <60>;
+            tapping-term-ms = <110>;
         };
 
         backspace: backspace {
@@ -18,7 +18,7 @@
             #binding-cells = <0>;
             bindings = <&lt 2 BACKSPACE>, <&kp BACKSPACE>;
 
-            tapping-term-ms = <60>;
+            tapping-term-ms = <110>;
         };
 
         space: space {
@@ -27,7 +27,7 @@
             #binding-cells = <0>;
             bindings = <&lt 3 SPACE>, <&kp SPACE>;
 
-            tapping-term-ms = <60>;
+            tapping-term-ms = <110>;
         };
 
         s: s {
