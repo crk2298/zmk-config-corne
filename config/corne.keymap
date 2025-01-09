@@ -2,6 +2,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        return: return {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RETURN";
+            #binding-cells = <0>;
+            bindings = <&lt 1 RETURN>, <&kp RETURN>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -13,10 +22,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q           &kp W           &kp F               &kp P             &kp B          &kp J      &kp L              &kp U                &kp Y            &kp SEMI        &kp F11
-&kp LCTRL  &mt LEFT_ALT A  &mt LEFT_GUI R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G          &kp M      &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_GUI I  &mt LEFT_ALT O  &none
-&kp LSHFT  &kp Z           &kp X           &kp C               &kp D             &kp V          &kp K      &kp H              &kp COMMA            &kp DOT          &kp FSLH        &to 4
-                                           &kp ESCAPE          &none             &lt 3 SPACE    &lt 1 RET  &lt 2 BACKSPACE    &kp DEL
+&kp TAB    &kp Q           &kp W           &kp F               &kp P             &kp B          &kp J    &kp L              &kp U                &kp Y            &kp SEMI        &kp F11
+&kp LCTRL  &mt LEFT_ALT A  &mt LEFT_GUI R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G          &kp M    &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_GUI I  &mt LEFT_ALT O  &none
+&kp LSHFT  &kp Z           &kp X           &kp C               &kp D             &kp V          &kp K    &kp H              &kp COMMA            &kp DOT          &kp FSLH        &to 4
+                                           &kp ESCAPE          &none             &lt 3 SPACE    &return  &lt 2 BACKSPACE    &kp DEL
             >;
         };
 
