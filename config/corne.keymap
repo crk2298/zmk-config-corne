@@ -9,6 +9,76 @@
             #binding-cells = <0>;
             bindings = <&lt 1 RETURN>, <&kp RETURN>;
         };
+
+        backspace: backspace {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BACKSPACE";
+            #binding-cells = <0>;
+            bindings = <&lt 2 BACKSPACE>, <&kp BACKSPACE>;
+        };
+
+        space: space {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SPACE";
+            #binding-cells = <0>;
+            bindings = <&lt 3 SPACE>, <&kp SPACE>;
+        };
+
+        s: s {
+            compatible = "zmk,behavior-tap-dance";
+            label = "S";
+            #binding-cells = <0>;
+            bindings = <&mt LEFT_CONTROL S>, <&kp S>;
+        };
+
+        t: t {
+            compatible = "zmk,behavior-tap-dance";
+            label = "T";
+            #binding-cells = <0>;
+            bindings = <&mt LEFT_SHIFT T>, <&kp T>;
+        };
+
+        r: r {
+            compatible = "zmk,behavior-tap-dance";
+            label = "R";
+            #binding-cells = <0>;
+            bindings = <&mt LEFT_GUI R>, <&kp R>;
+        };
+
+        a: a {
+            compatible = "zmk,behavior-tap-dance";
+            label = "A";
+            #binding-cells = <0>;
+            bindings = <&mt LEFT_ALT A>, <&kp A>;
+        };
+
+        n: n {
+            compatible = "zmk,behavior-tap-dance";
+            label = "N";
+            #binding-cells = <0>;
+            bindings = <&mt RIGHT_SHIFT N>, <&kp N>;
+        };
+
+        e: e {
+            compatible = "zmk,behavior-tap-dance";
+            label = "E";
+            #binding-cells = <0>;
+            bindings = <&mt RIGHT_CONTROL E>, <&kp E>;
+        };
+
+        i: i {
+            compatible = "zmk,behavior-tap-dance";
+            label = "I";
+            #binding-cells = <0>;
+            bindings = <&mt RIGHT_GUI I>, <&kp I>;
+        };
+
+        o: o {
+            compatible = "zmk,behavior-tap-dance";
+            label = "O";
+            #binding-cells = <0>;
+            bindings = <&mt LEFT_ALT O>, <&kp O>;
+        };
     };
 
     keymap {
@@ -22,10 +92,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q           &kp W           &kp F               &kp P             &kp B          &kp J    &kp L              &kp U                &kp Y            &kp SEMI        &kp F11
-&kp LCTRL  &mt LEFT_ALT A  &mt LEFT_GUI R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G          &kp M    &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_GUI I  &mt LEFT_ALT O  &none
-&kp LSHFT  &kp Z           &kp X           &kp C               &kp D             &kp V          &kp K    &kp H              &kp COMMA            &kp DOT          &kp FSLH        &to 4
-                                           &kp ESCAPE          &none             &lt 3 SPACE    &return  &lt 2 BACKSPACE    &kp DEL
+&kp TAB    &kp Q  &kp W  &kp F       &kp P  &kp B     &kp J    &kp L       &kp U      &kp Y    &kp SEMI  &kp F11
+&kp LCTRL  &a     &r     &s          &t     &kp G     &kp M    &n          &e         &i       &o        &none
+&kp LSHFT  &kp Z  &kp X  &kp C       &kp D  &kp V     &kp K    &kp H       &kp COMMA  &kp DOT  &kp FSLH  &to 4
+                         &kp ESCAPE  &none  &space    &return  &backspace  &kp DEL
             >;
         };
 
