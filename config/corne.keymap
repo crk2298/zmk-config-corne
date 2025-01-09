@@ -8,6 +8,8 @@
             label = "RETURN";
             #binding-cells = <0>;
             bindings = <&lt 1 RETURN>, <&kp RETURN>;
+
+            tapping-term-ms = <60>;
         };
 
         backspace: backspace {
@@ -15,6 +17,8 @@
             label = "BACKSPACE";
             #binding-cells = <0>;
             bindings = <&lt 2 BACKSPACE>, <&kp BACKSPACE>;
+
+            tapping-term-ms = <60>;
         };
 
         space: space {
@@ -22,6 +26,8 @@
             label = "SPACE";
             #binding-cells = <0>;
             bindings = <&lt 3 SPACE>, <&kp SPACE>;
+
+            tapping-term-ms = <60>;
         };
 
         s: s {
