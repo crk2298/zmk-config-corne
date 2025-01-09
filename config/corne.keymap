@@ -27,7 +27,7 @@
             #binding-cells = <0>;
             bindings = <&lt 3 SPACE>, <&kp SPACE>;
 
-            tapping-term-ms = <110>;
+            tapping-term-ms = <160>;
         };
 
         s: s {
