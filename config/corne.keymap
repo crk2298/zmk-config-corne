@@ -102,7 +102,7 @@
 &kp TAB    &kp Q           &kp W           &kp F               &kp P             &kp B     &kp J    &kp L              &kp U                &kp Y            &kp SEMI        &to 5
 &kp LCTRL  &mt LEFT_ALT A  &mt LEFT_GUI R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G     &kp M    &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_GUI I  &mt LEFT_ALT O  &kp F11
 &kp LSHFT  &kp Z           &kp X           &kp C               &kp D             &kp V     &kp K    &kp H              &kp COMMA            &kp DOT          &kp FSLH        &to 4
-                                           &kp ESCAPE          &none             &space    &return  &backspace         &kp DEL
+                                           &kp ESCAPE          &none             &space    &return  &backspace         &lt 7 DELETE
             >;
         };
 
